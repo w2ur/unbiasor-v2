@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { t } from '../lib/translations';
+import biases from '../data/biases.json';
+
+const lang = Astro.url.pathname.startsWith('/fr') ? 'fr' : 'en';
+---
+
+<Layout title={t('bias.library', lang)} lang={lang}>
+  <div class="px-4 py-6">
+    <div class="mb-6">
+      <h1 class="text-2xl font-bold text-gray-900 mb-2">
+        {t('bias.library', lang)}
+      </h1>
+      <p class="text-gray-600">
+        {t('bias.subtitle', lang)}
+      </p>
+    </div>
+
+    <div class="mb-4 text-sm text-gray-500">
+      {biases.length} {biases.length === 1 ? t('bias.found', lang) : t('bias.found_plural', lang)}
+    </div>
+
+    <div class="space-y-4">
+      {biases.map((bias) => (
+        <a 
+          href={`/bias/${bias.slug}`}
+          class="block bg-white rounded-lg border border-gray-200 p-4 hover:border-primary-300 hover:shadow-sm transition-all"
+        >
+          <div class="flex items-start gap-3">
+            <div class="text-2xl text-primary-500">
+              {bias.icon === 'search' && '🔍'}
+              {bias.icon === 'anchor' && '⚓'}
+              {bias.icon === 'coins' && '💰'}
+              {bias.icon === 'sparkles' && '✨'}
+              {bias.icon === 'brain' && '🧠'}
+            </div>
+            <div class="flex-1">
+              <h2 class="font-semibold text-gray-900">
+                {lang === 'fr' ? bias.nameFr : bias.name}
+              </h2>
+              <p class="text-sm text-gray-600 mt-1">
+                {lang === 'fr' ? bias.summaryFr : bias.summary}
+              </p>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>
