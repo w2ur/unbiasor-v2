@@ -1,0 +1,177 @@
+[
+  {
+    "biasId": 1,
+    "strategies": [
+      {
+        "type": "question",
+        "content": "What evidence would change my mind about this?",
+        "contentFr": "Quelles preuves me feraient changer d'avis ?"
+      },
+      {
+        "type": "question", 
+        "content": "Am I giving equal weight to contradicting information?",
+        "contentFr": "Est-ce que j'accorde le même poids aux informations contradictoires ?"
+      },
+      {
+        "type": "question",
+        "content": "Have I actively sought out disconfirming evidence?",
+        "contentFr": "Ai-je activement cherché des preuves qui me contredisent ?"
+      },
+      {
+        "type": "technique",
+        "content": "Actively seek out someone with the opposite view.",
+        "contentFr": "Cherchez activement quelqu'un avec un avis opposé."
+      },
+      {
+        "type": "technique",
+        "content": "Create pre-commitment criteria before reviewing information.",
+        "contentFr": "Créez des critères prédéfinis avant d'examiner les informations."
+      },
+      {
+        "type": "technique",
+        "content": "Assign someone to argue the opposing position (devil's advocate).",
+        "contentFr": "Désignez quelqu'un pour défendre la position opposée (avocat du diable)."
+      }
+    ]
+  },
+  {
+    "biasId": 2,
+    "strategies": [
+      {
+        "type": "question",
+        "content": "What would I think if I had received different information first?",
+        "contentFr": "Que penserais-je si j'avais reçu une information différente en premier ?"
+      },
+      {
+        "type": "question",
+        "content": "Am I adjusting enough from my initial reference point?",
+        "contentFr": "Est-ce que je m'ajuste suffisamment par rapport à mon point de référence initial ?"
+      },
+      {
+        "type": "question",
+        "content": "Is this anchor based on relevant data or arbitrary choice?",
+        "contentFr": "Cet ancrage est-il basé sur des données pertinentes ou un choix arbitraire ?"
+      },
+      {
+        "type": "technique",
+        "content": "Generate your own estimate before looking at provided numbers.",
+        "contentFr": "Faites votre propre estimation avant de regarder les chiffres fournis."
+      },
+      {
+        "type": "technique",
+        "content": "Consider multiple reference points objectively.",
+        "contentFr": "Considérez plusieurs points de référence objectivement."
+      },
+      {
+        "type": "technique",
+        "content": "Research market rates and benchmarks from multiple sources.",
+        "contentFr": "Recherchez les taux du marché et les références de plusieurs sources."
+      }
+    ]
+  },
+  {
+    "biasId": 3,
+    "strategies": [
+      {
+        "type": "question",
+        "content": "If starting fresh today, would I make the same investment?",
+        "contentFr": "Si je recommençais aujourd'hui, ferais-je le même investissement ?"
+      },
+      {
+        "type": "question",
+        "content": "What could I accomplish if I redirected these resources?",
+        "contentFr": "Que pourrais-je accomplir si je réorientais ces ressources ?"
+      },
+      {
+        "type": "question",
+        "content": "Am I continuing because of past investment or future value?",
+        "contentFr": "Est-ce que je continue à cause de l'investissement passé ou de la valeur future ?"
+      },
+      {
+        "type": "technique",
+        "content": "Set clear milestones and decision points in advance.",
+        "contentFr": "Définissez des jalons et points de décision clairs à l'avance."
+      },
+      {
+        "type": "technique",
+        "content": "Have an uninvested person evaluate the project objectively.",
+        "contentFr": "Faites évaluer le projet par quelqu'un qui n'y est pas impliqué."
+      },
+      {
+        "type": "technique",
+        "content": "Focus only on future costs and benefits, not past investments.",
+        "contentFr": "Concentrez-vous uniquement sur les coûts et bénéfices futurs, pas les investissements passés."
+      }
+    ]
+  },
+  {
+    "biasId": 4,
+    "strategies": [
+      {
+        "type": "question",
+        "content": "Am I evaluating each trait independently?",
+        "contentFr": "Est-ce que j'évalue chaque trait indépendamment ?"
+      },
+      {
+        "type": "question",
+        "content": "What specific evidence do I have for each quality?",
+        "contentFr": "Quelles preuves spécifiques ai-je pour chaque qualité ?"
+      },
+      {
+        "type": "question",
+        "content": "What weaknesses might be hidden by one strong positive trait?",
+        "contentFr": "Quelles faiblesses pourraient être cachées par un trait positif fort ?"
+      },
+      {
+        "type": "technique",
+        "content": "Use structured rubrics that force independent evaluation.",
+        "contentFr": "Utilisez des grilles structurées forçant une évaluation indépendante."
+      },
+      {
+        "type": "technique",
+        "content": "Have different people evaluate different aspects.",
+        "contentFr": "Faites évaluer différents aspects par différentes personnes."
+      },
+      {
+        "type": "technique",
+        "content": "Score each dimension before calculating overall assessment.",
+        "contentFr": "Notez chaque dimension avant de calculer l'évaluation globale."
+      }
+    ]
+  },
+  {
+    "biasId": 5,
+    "strategies": [
+      {
+        "type": "question",
+        "content": "Am I overweighting this because it's recent or emotional?",
+        "contentFr": "Est-ce que je surpondère cela parce que c'est récent ou émotionnel ?"
+      },
+      {
+        "type": "question",
+        "content": "What do the actual statistics show?",
+        "contentFr": "Que montrent les statistiques réelles ?"
+      },
+      {
+        "type": "question",
+        "content": "Can I easily recall this because it's common or just memorable?",
+        "contentFr": "Puis-je facilement me rappeler cela parce que c'est commun ou juste mémorable ?"
+      },
+      {
+        "type": "technique",
+        "content": "Look up actual data rather than relying on recalled examples.",
+        "contentFr": "Recherchez les données réelles plutôt que de vous fier aux exemples mémorisés."
+      },
+      {
+        "type": "technique",
+        "content": "Keep a decision journal to track outcomes over time.",
+        "contentFr": "Tenez un journal de décisions pour suivre les résultats dans le temps."
+      },
+      {
+        "type": "technique",
+        "content": "Use base rates and statistical databases for risk assessment.",
+        "contentFr": "Utilisez les taux de base et les bases de données statistiques pour l'évaluation des risques."
+      }
+    ]
+  }
+]

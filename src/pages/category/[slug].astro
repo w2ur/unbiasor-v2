@@ -1,0 +1,150 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { t, type Language } from '../../lib/translations';
+import categories from '../../data/categories.json';
+import decisions from '../../data/decisions.json';
+
+export async function getStaticPaths() {
+  const paths: any[] = [];
+  
+  categories.forEach(category => {
+    // English paths
+    paths.push({
+      params: { slug: category.slug },
+      props: { category, lang: 'en' }
+    });
+    
+    // French paths
+    paths.push({
+      params: { slug: category.slug },
+      props: { category, lang: 'fr' }
+    });
+  });
+  
+  return paths;
+}
+
+const { category, lang } = Astro.props;
+const isTopLevel = !category.parentId;
+
+// Get subcategories if this is a top-level category
+const subcategories = isTopLevel 
+  ? categories.filter(cat => cat.parentId === category.id)
+  : [];
+
+// Get decisions in this category
+const categoryDecisions = decisions.filter(decision => decision.categoryId === category.id);
+
+const title = lang === 'fr' ? category.nameFr : category.name;
+const description = lang === 'fr' ? category.descriptionFr : category.description;
+---
+
+<Layout title={title} description={description} lang={lang}>
+  <div class="px-4 py-6">
+    <!-- Back button -->
+    <a 
+      href={lang === 'fr' ? '/fr' : '/'} 
+      class="inline-flex items-center text-primary-600 hover:text-primary-700 mb-4"
+    >
+      ← {t('common.back', lang)}
+    </a>
+
+    <!-- Category header -->
+    <div class="mb-6">
+      <h1 class="text-2xl font-bold text-gray-900 mb-2">
+        {title}
+      </h1>
+      {description && (
+        <p class="text-gray-600">
+          {description}
+        </p>
+      )}
+    </div>
+
+    <!-- Subcategories (for top-level categories) -->
+    {isTopLevel && subcategories.length > 0 && (
+      <div class="mb-6">
+        <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
+          {t('category.subcategories', lang)}
+        </h2>
+        <div class="grid grid-cols-1 gap-2">
+          {subcategories.map(subcat => {
+            const subcatName = lang === 'fr' ? subcat.nameFr : subcat.name;
+            const subcatDescription = lang === 'fr' ? subcat.descriptionFr : subcat.description;
+            const linkPath = lang === 'fr' ? `/fr/category/${subcat.slug}` : `/category/${subcat.slug}`;
+            
+            return (
+              <a
+                href={linkPath}
+                class="block bg-white rounded-xl p-4 border border-gray-200 hover:border-primary-300 hover:shadow-sm transition-all"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="font-medium text-gray-900">{subcatName}</h3>
+                    {subcatDescription && (
+                      <p class="text-sm text-gray-500 mt-1">
+                        {subcatDescription}
+                      </p>
+                    )}
+                  </div>
+                  <div class="w-5 h-5 text-gray-400">→</div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    )}
+
+    <!-- Decision Types -->
+    {categoryDecisions.length > 0 && (
+      <div>
+        <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
+          {t('category.decisions', lang)}
+        </h2>
+        <div class="space-y-2">
+          {categoryDecisions.map(decision => {
+            const decisionTitle = lang === 'fr' ? decision.titleFr : decision.title;
+            const decisionDescription = lang === 'fr' ? decision.descriptionFr : decision.description;
+            const linkPath = lang === 'fr' ? `/fr/decision/${decision.slug}` : `/decision/${decision.slug}`;
+            
+            return (
+              <a
+                href={linkPath}
+                class="block bg-white rounded-xl p-4 border-2 border-primary-100 hover:border-primary-400 hover:shadow-md transition-all"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="font-medium text-gray-900">{decisionTitle}</h3>
+                    {decisionDescription && (
+                      <p class="text-sm text-gray-500 mt-1 line-clamp-1">
+                        {decisionDescription}
+                      </p>
+                    )}
+                  </div>
+                  <div class="w-5 h-5 text-gray-400">→</div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    )}
+
+    <!-- Empty state -->
+    {!isTopLevel && categoryDecisions.length === 0 && (
+      <div class="text-center py-8">
+        <p class="text-gray-500">{t('category.no_items', lang)}</p>
+      </div>
+    )}
+  </div>
+</Layout>
+
+<style>
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

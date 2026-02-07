@@ -1,0 +1,47 @@
+---
+import { t, type Language } from '../lib/translations';
+import categories from '../data/categories.json';
+
+export interface Props {
+  lang: Language;
+}
+
+const { lang } = Astro.props;
+
+// Get only top-level categories (no parentId)
+const topLevelCategories = categories.filter(cat => !cat.parentId);
+---
+
+<div class="grid grid-cols-2 gap-3">
+  {topLevelCategories.map((category) => {
+    const categoryName = lang === 'fr' ? category.nameFr : category.name;
+    const categoryDescription = lang === 'fr' ? category.descriptionFr : category.description;
+    const linkPath = lang === 'fr' ? `/fr/category/${category.slug}` : `/category/${category.slug}`;
+    
+    return (
+      <a
+        href={linkPath}
+        class="bg-white rounded-xl p-4 border border-gray-200 hover:border-primary-300 hover:shadow-sm transition-all"
+      >
+        <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center text-primary-600 mb-3">
+          <div class="w-6 h-6 bg-primary-400 rounded"></div>
+        </div>
+        <h3 class="font-medium text-gray-900">{categoryName}</h3>
+        {categoryDescription && (
+          <p class="text-sm text-gray-500 mt-1 line-clamp-2">
+            {categoryDescription}
+          </p>
+        )}
+      </a>
+    );
+  })}
+</div>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Professional",
+    "nameFr": "Professionnel",
+    "slug": "professional",
+    "icon": "briefcase",
+    "parentId": null,
+    "description": "Decisions related to your career and work life",
+    "descriptionFr": "Décisions liées à votre carrière et vie professionnelle"
+  },
+  {
+    "id": 2,
+    "name": "Personal",
+    "nameFr": "Personnel", 
+    "slug": "personal",
+    "icon": "heart",
+    "parentId": null,
+    "description": "Decisions affecting your personal life and well-being",
+    "descriptionFr": "Décisions affectant votre vie personnelle et votre bien-être"
+  },
+  {
+    "id": 3,
+    "name": "Hiring & Team",
+    "nameFr": "Recrutement & Équipe",
+    "slug": "hiring-team", 
+    "icon": "users",
+    "parentId": 1,
+    "description": "Hiring candidates and building teams",
+    "descriptionFr": "Recruter des candidats et construire des équipes"
+  },
+  {
+    "id": 4,
+    "name": "Career Development",
+    "nameFr": "Développement de carrière",
+    "slug": "career-development",
+    "icon": "trending-up",
+    "parentId": 1,
+    "description": "Job changes, promotions, and career growth",
+    "descriptionFr": "Changements d'emploi, promotions et évolution de carrière"
+  },
+  {
+    "id": 5,
+    "name": "Project Management", 
+    "nameFr": "Gestion de projet",
+    "slug": "project-management",
+    "icon": "folder",
+    "parentId": 1,
+    "description": "Managing projects and initiatives",
+    "descriptionFr": "Gérer des projets et initiatives"
+  },
+  {
+    "id": 6,
+    "name": "Strategy & Investment",
+    "nameFr": "Stratégie & Investissement", 
+    "slug": "strategy-investment",
+    "icon": "target",
+    "parentId": 1,
+    "description": "Strategic decisions and business investments",
+    "descriptionFr": "Décisions stratégiques et investissements business"
+  },
+  {
+    "id": 7,
+    "name": "Leadership & Management",
+    "nameFr": "Leadership & Management",
+    "slug": "leadership-management",
+    "icon": "crown", 
+    "parentId": 1,
+    "description": "Leading teams and managing people",
+    "descriptionFr": "Diriger des équipes et gérer des personnes"
+  },
+  {
+    "id": 8,
+    "name": "Negotiation & Deals",
+    "nameFr": "Négociation & Accords",
+    "slug": "negotiation-deals",
+    "icon": "handshake",
+    "parentId": 1,
+    "description": "Negotiating contracts, salaries, and partnerships", 
+    "descriptionFr": "Négocier des contrats, salaires et partenariats"
+  },
+  {
+    "id": 9,
+    "name": "Relationships",
+    "nameFr": "Relations",
+    "slug": "relationships",
+    "icon": "heart",
+    "parentId": 2,
+    "description": "Partner, family, and friendship decisions",
+    "descriptionFr": "Décisions concernant le partenaire, la famille et les amitiés"
+  },
+  {
+    "id": 10,
+    "name": "Personal Finance",
+    "nameFr": "Finances personnelles",
+    "slug": "personal-finance", 
+    "icon": "wallet",
+    "parentId": 2,
+    "description": "Money management and financial decisions",
+    "descriptionFr": "Gestion de l'argent et décisions financières"
+  },
+  {
+    "id": 11,
+    "name": "Health & Wellness",
+    "nameFr": "Santé & Bien-être",
+    "slug": "health-wellness",
+    "icon": "heart-pulse",
+    "parentId": 2,
+    "description": "Medical, fitness, and lifestyle choices", 
+    "descriptionFr": "Choix médicaux, fitness et mode de vie"
+  },
+  {
+    "id": 12,
+    "name": "Education & Learning",
+    "nameFr": "Éducation & Apprentissage",
+    "slug": "education-learning",
+    "icon": "graduation-cap",
+    "parentId": 2,
+    "description": "Educational and skill development decisions",
+    "descriptionFr": "Décisions éducatives et de développement de compétences"
+  },
+  {
+    "id": 13,
+    "name": "Living & Home",
+    "nameFr": "Habitation & Foyer",
+    "slug": "living-home",
+    "icon": "home",
+    "parentId": 2,
+    "description": "Housing, location, and home-related choices",
+    "descriptionFr": "Choix de logement, localisation et liés au foyer"
+  },
+  {
+    "id": 14,
+    "name": "Major Purchases", 
+    "nameFr": "Achats importants",
+    "slug": "major-purchases",
+    "icon": "shopping-cart",
+    "parentId": 2,
+    "description": "Significant buying decisions",
+    "descriptionFr": "Décisions d'achat importantes"
+  }
+]

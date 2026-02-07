@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Memory",
+    "nameFr": "Mémoire",
+    "slug": "memory",
+    "description": "Biases that affect how we remember and recall information",
+    "descriptionFr": "Biais qui affectent la façon dont nous mémorisons et rappelons les informations"
+  },
+  {
+    "id": 2,
+    "name": "Judgment",
+    "nameFr": "Jugement",
+    "slug": "judgment",
+    "description": "Biases that distort our assessment of people and situations",
+    "descriptionFr": "Biais qui déforment notre évaluation des personnes et des situations"
+  },
+  {
+    "id": 3,
+    "name": "Decision-making",
+    "nameFr": "Prise de décision",
+    "slug": "decision-making",
+    "description": "Biases that affect our choices and decision processes",
+    "descriptionFr": "Biais qui affectent nos choix et processus de décision"
+  },
+  {
+    "id": 4,
+    "name": "Social",
+    "nameFr": "Social",
+    "slug": "social",
+    "description": "Biases related to our interactions with others",
+    "descriptionFr": "Biais liés à nos interactions avec les autres"
+  },
+  {
+    "id": 5,
+    "name": "Belief",
+    "nameFr": "Croyance",
+    "slug": "belief",
+    "description": "Biases that affect how we form and maintain beliefs",
+    "descriptionFr": "Biais qui affectent la façon dont nous formons et maintenons nos croyances"
+  },
+  {
+    "id": 6,
+    "name": "Attention",
+    "nameFr": "Attention",
+    "slug": "attention",
+    "description": "Biases related to what we notice and focus on",
+    "descriptionFr": "Biais liés à ce que nous remarquons et sur quoi nous nous concentrons"
+  },
+  {
+    "id": 7,
+    "name": "Probability",
+    "nameFr": "Probabilité",
+    "slug": "probability",
+    "description": "Biases that affect how we estimate likelihood and risk",
+    "descriptionFr": "Biais qui affectent la façon dont nous estimons la probabilité et le risque"
+  },
+  {
+    "id": 8,
+    "name": "Self-perception",
+    "nameFr": "Perception de soi",
+    "slug": "self-perception",
+    "description": "Biases affecting how we view ourselves and our abilities",
+    "descriptionFr": "Biais affectant la façon dont nous nous percevons et nos capacités"
+  }
+]

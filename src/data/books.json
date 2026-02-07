@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Your Brain at Work",
+    "titleFr": "Votre cerveau au travail",
+    "author": "David Rock",
+    "description": "Strategies for overcoming distraction, regaining focus, and working smarter all day long. A practical guide based on neuroscience to help you organize, prioritize, and manage cognitive tasks.",
+    "descriptionFr": "Stratégies pour surmonter les distractions, retrouver la concentration et travailler plus intelligemment. Un guide pratique basé sur les neurosciences pour organiser, prioriser et gérer les tâches cognitives.",
+    "amazonUrl": "https://amzn.to/48tjpBz"
+  },
+  {
+    "id": 2,
+    "title": "Thinking, Fast and Slow",
+    "titleFr": "Système 1 / Système 2 : Les deux vitesses de la pensée",
+    "author": "Daniel Kahneman",
+    "description": "Nobel Prize winner Daniel Kahneman's groundbreaking exploration of the two systems that drive the way we think and the cognitive biases that affect our decisions.",
+    "descriptionFr": "L'exploration révolutionnaire par le prix Nobel Daniel Kahneman des deux systèmes qui gouvernent notre façon de penser et les biais cognitifs qui affectent nos décisions.",
+    "amazonUrl": "https://amzn.to/4pJNDqX"
+  }
+]

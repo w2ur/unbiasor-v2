@@ -1,0 +1,86 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  lang?: string;
+}
+
+const { title, description = "Unbiasor - Cognitive bias awareness tool", lang = "en" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+  </head>
+  <body class="bg-gray-50">
+    <div class="min-h-screen">
+      <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-md mx-auto px-4 py-4">
+          <div class="flex items-center justify-between">
+            <a href="/" class="text-xl font-bold text-primary-600">
+              Unbiasor
+            </a>
+            <div class="flex items-center gap-4">
+              <a href="/biases" class="text-gray-600 hover:text-primary-600 transition-colors">
+                Biases
+              </a>
+              <a href="/books" class="text-gray-600 hover:text-primary-600 transition-colors">
+                Books
+              </a>
+              <div class="language-switcher">
+                <button data-lang="en" class="text-sm px-2 py-1 rounded hover:bg-gray-100">EN</button>
+                <button data-lang="fr" class="text-sm px-2 py-1 rounded hover:bg-gray-100">FR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <main class="max-w-md mx-auto">
+        <slot />
+      </main>
+    </div>
+    
+    <script>
+      // Language switcher functionality
+      const updateLanguage = (lang) => {
+        localStorage.setItem('language', lang);
+        // Update current page URL with language prefix or reload
+        const currentPath = window.location.pathname;
+        if (lang === 'fr' && !currentPath.startsWith('/fr')) {
+          window.location.href = '/fr' + currentPath;
+        } else if (lang === 'en' && currentPath.startsWith('/fr')) {
+          window.location.href = currentPath.replace('/fr', '');
+        }
+      };
+
+      document.querySelectorAll('[data-lang]').forEach(button => {
+        button.addEventListener('click', (e) => {
+          const lang = e.target.getAttribute('data-lang');
+          updateLanguage(lang);
+        });
+      });
+
+      // Set active language button
+      const currentLang = localStorage.getItem('language') || 'en';
+      document.querySelector(`[data-lang="${currentLang}"]`)?.classList.add('bg-primary-100', 'text-primary-600');
+    </script>
+  </body>
+</html>

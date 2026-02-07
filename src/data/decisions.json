@@ -1,0 +1,335 @@
+[
+  {
+    "id": 1,
+    "title": "Hiring a new team member",
+    "titleFr": "Recruter un nouveau membre d'équipe",
+    "slug": "hiring-new-team-member",
+    "description": "Evaluating candidates and deciding who to hire for your team",
+    "descriptionFr": "Évaluer les candidats et décider qui embaucher pour votre équipe",
+    "categoryId": 3
+  },
+  {
+    "id": 2,
+    "title": "Letting someone go",
+    "titleFr": "Se séparer d'un employé",
+    "slug": "letting-someone-go",
+    "description": "Deciding whether to terminate an employee",
+    "descriptionFr": "Décider s'il faut mettre fin au contrat d'un employé",
+    "categoryId": 3
+  },
+  {
+    "id": 3,
+    "title": "Promoting a team member",
+    "titleFr": "Promouvoir un membre de l'équipe",
+    "slug": "promoting-team-member",
+    "description": "Choosing who deserves a promotion",
+    "descriptionFr": "Choisir qui mérite une promotion",
+    "categoryId": 3
+  },
+  {
+    "id": 4,
+    "title": "Restructuring a team",
+    "titleFr": "Restructurer une équipe",
+    "slug": "restructuring-team",
+    "description": "Reorganizing team structure and roles",
+    "descriptionFr": "Réorganiser la structure et les rôles de l'équipe",
+    "categoryId": 3
+  },
+  {
+    "id": 5,
+    "title": "Delegating responsibilities",
+    "titleFr": "Déléguer des responsabilités",
+    "slug": "delegating-responsibilities",
+    "description": "Deciding what to delegate and to whom",
+    "descriptionFr": "Décider quoi déléguer et à qui",
+    "categoryId": 3
+  },
+  {
+    "id": 6,
+    "title": "Changing jobs",
+    "titleFr": "Changer d'emploi",
+    "slug": "changing-jobs",
+    "description": "Evaluating whether to leave your current position",
+    "descriptionFr": "Évaluer s'il faut quitter votre poste actuel",
+    "categoryId": 4
+  },
+  {
+    "id": 7,
+    "title": "Accepting a promotion",
+    "titleFr": "Accepter une promotion",
+    "slug": "accepting-promotion",
+    "description": "Deciding whether to accept a new role with more responsibility",
+    "descriptionFr": "Décider d'accepter un nouveau rôle avec plus de responsabilités",
+    "categoryId": 4
+  },
+  {
+    "id": 8,
+    "title": "Making a career pivot",
+    "titleFr": "Faire un virage de carrière",
+    "slug": "career-pivot",
+    "description": "Changing industries or professions entirely",
+    "descriptionFr": "Changer complètement d'industrie ou de profession",
+    "categoryId": 4
+  },
+  {
+    "id": 9,
+    "title": "Starting your own business",
+    "titleFr": "Créer son entreprise",
+    "slug": "starting-business",
+    "description": "Leaving employment to become an entrepreneur",
+    "descriptionFr": "Quitter son emploi pour devenir entrepreneur",
+    "categoryId": 4
+  },
+  {
+    "id": 10,
+    "title": "Going freelance",
+    "titleFr": "Devenir freelance",
+    "slug": "going-freelance",
+    "description": "Transitioning from employee to independent contractor",
+    "descriptionFr": "Passer de salarié à travailleur indépendant",
+    "categoryId": 4
+  },
+  {
+    "id": 11,
+    "title": "Starting a new project",
+    "titleFr": "Lancer un nouveau projet",
+    "slug": "starting-new-project",
+    "description": "Deciding whether to invest in a new initiative",
+    "descriptionFr": "Décider d'investir dans une nouvelle initiative",
+    "categoryId": 5
+  },
+  {
+    "id": 12,
+    "title": "Cancelling or pivoting a project",
+    "titleFr": "Annuler ou réorienter un projet",
+    "slug": "cancelling-project",
+    "description": "Deciding whether to continue, pivot, or stop a project",
+    "descriptionFr": "Décider de continuer, réorienter ou arrêter un projet",
+    "categoryId": 5
+  },
+  {
+    "id": 13,
+    "title": "Choosing a technology or tool",
+    "titleFr": "Choisir une technologie ou un outil",
+    "slug": "choosing-technology",
+    "description": "Selecting the right tools, platforms, or technologies",
+    "descriptionFr": "Sélectionner les bons outils, plateformes ou technologies",
+    "categoryId": 5
+  },
+  {
+    "id": 14,
+    "title": "Setting project deadlines",
+    "titleFr": "Fixer des délais de projet",
+    "slug": "setting-deadlines",
+    "description": "Determining realistic timelines for deliverables",
+    "descriptionFr": "Déterminer des délais réalistes pour les livrables",
+    "categoryId": 5
+  },
+  {
+    "id": 15,
+    "title": "Making a major business investment",
+    "titleFr": "Faire un investissement business majeur",
+    "slug": "major-business-investment",
+    "description": "Committing significant resources to a business opportunity",
+    "descriptionFr": "Engager des ressources importantes dans une opportunité business",
+    "categoryId": 6
+  },
+  {
+    "id": 16,
+    "title": "Entering a new market",
+    "titleFr": "Entrer sur un nouveau marché",
+    "slug": "entering-new-market",
+    "description": "Expanding into a new geographic or product market",
+    "descriptionFr": "S'étendre sur un nouveau marché géographique ou produit",
+    "categoryId": 6
+  },
+  {
+    "id": 17,
+    "title": "Forming a partnership",
+    "titleFr": "Former un partenariat",
+    "slug": "forming-partnership",
+    "description": "Deciding to partner with another company or individual",
+    "descriptionFr": "Décider de s'associer avec une autre entreprise ou individu",
+    "categoryId": 6
+  },
+  {
+    "id": 18,
+    "title": "Setting pricing strategy",
+    "titleFr": "Définir la stratégie de prix",
+    "slug": "pricing-strategy",
+    "description": "Determining the right price for products or services",
+    "descriptionFr": "Déterminer le bon prix pour les produits ou services",
+    "categoryId": 6
+  },
+  {
+    "id": 19,
+    "title": "Giving difficult feedback",
+    "titleFr": "Donner un feedback difficile",
+    "slug": "giving-difficult-feedback",
+    "description": "Deciding how to address performance issues",
+    "descriptionFr": "Décider comment aborder les problèmes de performance",
+    "categoryId": 7
+  },
+  {
+    "id": 20,
+    "title": "Resolving team conflicts",
+    "titleFr": "Résoudre les conflits d'équipe",
+    "slug": "resolving-conflicts",
+    "description": "Mediating disputes between team members",
+    "descriptionFr": "Arbitrer les différends entre membres de l'équipe",
+    "categoryId": 7
+  },
+  {
+    "id": 21,
+    "title": "Setting team priorities",
+    "titleFr": "Définir les priorités de l'équipe",
+    "slug": "setting-priorities",
+    "description": "Deciding what the team should focus on",
+    "descriptionFr": "Décider sur quoi l'équipe devrait se concentrer",
+    "categoryId": 7
+  },
+  {
+    "id": 22,
+    "title": "Negotiating salary",
+    "titleFr": "Négocier son salaire",
+    "slug": "negotiating-salary",
+    "description": "Asking for a raise or negotiating compensation",
+    "descriptionFr": "Demander une augmentation ou négocier sa rémunération",
+    "categoryId": 8
+  },
+  {
+    "id": 23,
+    "title": "Negotiating a contract",
+    "titleFr": "Négocier un contrat",
+    "slug": "negotiating-contract",
+    "description": "Establishing terms with clients, vendors, or partners",
+    "descriptionFr": "Établir des conditions avec des clients, fournisseurs ou partenaires",
+    "categoryId": 8
+  },
+  {
+    "id": 24,
+    "title": "Committing to a relationship",
+    "titleFr": "S'engager dans une relation",
+    "slug": "committing-relationship",
+    "description": "Deciding on long-term commitment with a partner",
+    "descriptionFr": "Décider d'un engagement à long terme avec un partenaire",
+    "categoryId": 9
+  },
+  {
+    "id": 25,
+    "title": "Ending a relationship",
+    "titleFr": "Mettre fin à une relation",
+    "slug": "ending-relationship",
+    "description": "Deciding whether to end a romantic relationship",
+    "descriptionFr": "Décider de mettre fin à une relation amoureuse",
+    "categoryId": 9
+  },
+  {
+    "id": 26,
+    "title": "Making family planning decisions",
+    "titleFr": "Décisions de planification familiale",
+    "slug": "family-planning",
+    "description": "Decisions about having children or family structure",
+    "descriptionFr": "Décisions concernant avoir des enfants ou la structure familiale",
+    "categoryId": 9
+  },
+  {
+    "id": 27,
+    "title": "Investing personal savings",
+    "titleFr": "Investir ses économies",
+    "slug": "investing-savings",
+    "description": "Deciding how to invest your money",
+    "descriptionFr": "Décider comment investir son argent",
+    "categoryId": 10
+  },
+  {
+    "id": 28,
+    "title": "Taking out a loan",
+    "titleFr": "Contracter un emprunt",
+    "slug": "taking-loan",
+    "description": "Deciding whether to borrow money and on what terms",
+    "descriptionFr": "Décider d'emprunter de l'argent et à quelles conditions",
+    "categoryId": 10
+  },
+  {
+    "id": 29,
+    "title": "Planning for retirement",
+    "titleFr": "Planifier sa retraite",
+    "slug": "retirement-planning",
+    "description": "Making decisions about retirement savings and timing",
+    "descriptionFr": "Prendre des décisions sur l'épargne-retraite et le timing",
+    "categoryId": 10
+  },
+  {
+    "id": 30,
+    "title": "Choosing a medical treatment",
+    "titleFr": "Choisir un traitement médical",
+    "slug": "choosing-treatment",
+    "description": "Deciding between different health treatment options",
+    "descriptionFr": "Choisir entre différentes options de traitement de santé",
+    "categoryId": 11
+  },
+  {
+    "id": 31,
+    "title": "Making a major lifestyle change",
+    "titleFr": "Faire un changement de mode de vie majeur",
+    "slug": "lifestyle-change",
+    "description": "Committing to significant changes in diet, exercise, or habits",
+    "descriptionFr": "S'engager dans des changements importants d'alimentation, d'exercice ou d'habitudes",
+    "categoryId": 11
+  },
+  {
+    "id": 32,
+    "title": "Buying a home",
+    "titleFr": "Acheter une maison",
+    "slug": "buying-home",
+    "description": "Making the decision to purchase a property",
+    "descriptionFr": "Prendre la décision d'acheter une propriété",
+    "categoryId": 12
+  },
+  {
+    "id": 33,
+    "title": "Relocating to a new city",
+    "titleFr": "Déménager dans une nouvelle ville",
+    "slug": "relocating-city",
+    "description": "Moving to a different city or country",
+    "descriptionFr": "Déménager dans une autre ville ou un autre pays",
+    "categoryId": 12
+  },
+  {
+    "id": 34,
+    "title": "Pursuing a degree or certification",
+    "titleFr": "Obtenir un diplôme ou une certification",
+    "slug": "pursuing-degree",
+    "description": "Deciding to invest in formal education",
+    "descriptionFr": "Décider d'investir dans une éducation formelle",
+    "categoryId": 13
+  },
+  {
+    "id": 35,
+    "title": "Choosing a school or program",
+    "titleFr": "Choisir une école ou un programme",
+    "slug": "choosing-school",
+    "description": "Selecting the right educational institution or program",
+    "descriptionFr": "Sélectionner la bonne institution ou le bon programme éducatif",
+    "categoryId": 13
+  },
+  {
+    "id": 36,
+    "title": "Buying a vehicle",
+    "titleFr": "Acheter un véhicule",
+    "slug": "buying-vehicle",
+    "description": "Deciding which car or vehicle to purchase",
+    "descriptionFr": "Décider quel véhicule acheter",
+    "categoryId": 14
+  },
+  {
+    "id": 37,
+    "title": "Making a major life decision",
+    "titleFr": "Prendre une décision de vie majeure",
+    "slug": "major-life-decision",
+    "description": "Significant choices that will change your life direction",
+    "descriptionFr": "Choix significatifs qui changeront la direction de votre vie",
+    "categoryId": 14
+  }
+]
