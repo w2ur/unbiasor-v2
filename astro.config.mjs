@@ -1,10 +1,10 @@
 import { defineConfig } from 'astro/config';
-import cloudflarePages from '@astrojs/cloudflare-pages';
+import adapter from '@astrojs/cloudflare';
 import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 
 export default defineConfig({
-  adapter: cloudflarePages(),
+  adapter: adapter(),
   integrations: [tailwind(), react()],
   output: 'static',
   site: 'https://unbiasor.com',
