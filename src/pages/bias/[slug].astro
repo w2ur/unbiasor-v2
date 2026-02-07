@@ -3,6 +3,12 @@ import Layout from '../../layouts/Layout.astro';
 import { t } from '../../lib/translations';
 import biases from '../../data/biases.json';
 
+export function getStaticPaths() {
+  return biases.map(bias => ({
+    params: { slug: bias.slug },
+  }));
+}
+
 const lang = Astro.url.pathname.startsWith('/fr') ? 'fr' : 'en';
 const { slug } = Astro.params;
 

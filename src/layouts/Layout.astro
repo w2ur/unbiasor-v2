@@ -60,7 +60,7 @@ const { title, description = "Unbiasor - Cognitive bias awareness tool", lang = 
     
     <script>
       // Language switcher functionality
-      const updateLanguage = (lang) => {
+      const updateLanguage = (lang: string) => {
         localStorage.setItem('language', lang);
         // Update current page URL with language prefix or reload
         const currentPath = window.location.pathname;
@@ -73,8 +73,9 @@ const { title, description = "Unbiasor - Cognitive bias awareness tool", lang = 
 
       document.querySelectorAll('[data-lang]').forEach(button => {
         button.addEventListener('click', (e) => {
-          const lang = e.target.getAttribute('data-lang');
-          updateLanguage(lang);
+          const target = e.target as HTMLElement;
+          const lang = target.getAttribute('data-lang');
+          if (lang) updateLanguage(lang);
         });
       });
 
